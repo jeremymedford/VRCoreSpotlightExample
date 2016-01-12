@@ -1,0 +1,291 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		49BFD4E61C4595B30056742A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFD4E51C4595B30056742A /* AppDelegate.swift */; };
+		49BFD4E81C4595B30056742A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFD4E71C4595B30056742A /* ViewController.swift */; };
+		49BFD4EB1C4595B30056742A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD4E91C4595B30056742A /* Main.storyboard */; };
+		49BFD4ED1C4595B30056742A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD4EC1C4595B30056742A /* Assets.xcassets */; };
+		49BFD4F01C4595B30056742A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD4EE1C4595B30056742A /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		49BFD4E21C4595B30056742A /* VRCoreSpotlightExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VRCoreSpotlightExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		49BFD4E51C4595B30056742A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		49BFD4E71C4595B30056742A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49BFD4EA1C4595B30056742A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		49BFD4EC1C4595B30056742A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		49BFD4EF1C4595B30056742A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		49BFD4F11C4595B30056742A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		49BFD4DF1C4595B30056742A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		49BFD4D91C4595B20056742A = {
+			isa = PBXGroup;
+			children = (
+				49BFD4E41C4595B30056742A /* VRCoreSpotlightExample */,
+				49BFD4E31C4595B30056742A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		49BFD4E31C4595B30056742A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				49BFD4E21C4595B30056742A /* VRCoreSpotlightExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		49BFD4E41C4595B30056742A /* VRCoreSpotlightExample */ = {
+			isa = PBXGroup;
+			children = (
+				49BFD4E51C4595B30056742A /* AppDelegate.swift */,
+				49BFD4E71C4595B30056742A /* ViewController.swift */,
+				49BFD4E91C4595B30056742A /* Main.storyboard */,
+				49BFD4EC1C4595B30056742A /* Assets.xcassets */,
+				49BFD4EE1C4595B30056742A /* LaunchScreen.storyboard */,
+				49BFD4F11C4595B30056742A /* Info.plist */,
+			);
+			path = VRCoreSpotlightExample;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		49BFD4E11C4595B30056742A /* VRCoreSpotlightExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 49BFD4F41C4595B30056742A /* Build configuration list for PBXNativeTarget "VRCoreSpotlightExample" */;
+			buildPhases = (
+				49BFD4DE1C4595B30056742A /* Sources */,
+				49BFD4DF1C4595B30056742A /* Frameworks */,
+				49BFD4E01C4595B30056742A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VRCoreSpotlightExample;
+			productName = VRCoreSpotlightExample;
+			productReference = 49BFD4E21C4595B30056742A /* VRCoreSpotlightExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		49BFD4DA1C4595B20056742A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Vintage Robot";
+				TargetAttributes = {
+					49BFD4E11C4595B30056742A = {
+						CreatedOnToolsVersion = 7.2;
+					};
+				};
+			};
+			buildConfigurationList = 49BFD4DD1C4595B20056742A /* Build configuration list for PBXProject "VRCoreSpotlightExample" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 49BFD4D91C4595B20056742A;
+			productRefGroup = 49BFD4E31C4595B30056742A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				49BFD4E11C4595B30056742A /* VRCoreSpotlightExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		49BFD4E01C4595B30056742A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49BFD4F01C4595B30056742A /* LaunchScreen.storyboard in Resources */,
+				49BFD4ED1C4595B30056742A /* Assets.xcassets in Resources */,
+				49BFD4EB1C4595B30056742A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		49BFD4DE1C4595B30056742A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49BFD4E81C4595B30056742A /* ViewController.swift in Sources */,
+				49BFD4E61C4595B30056742A /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49BFD4E91C4595B30056742A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49BFD4EA1C4595B30056742A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		49BFD4EE1C4595B30056742A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49BFD4EF1C4595B30056742A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		49BFD4F21C4595B30056742A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		49BFD4F31C4595B30056742A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		49BFD4F51C4595B30056742A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VRCoreSpotlightExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vintagerobot.VRCoreSpotlightExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		49BFD4F61C4595B30056742A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = VRCoreSpotlightExample/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vintagerobot.VRCoreSpotlightExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		49BFD4DD1C4595B20056742A /* Build configuration list for PBXProject "VRCoreSpotlightExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49BFD4F21C4595B30056742A /* Debug */,
+				49BFD4F31C4595B30056742A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		49BFD4F41C4595B30056742A /* Build configuration list for PBXNativeTarget "VRCoreSpotlightExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				49BFD4F51C4595B30056742A /* Debug */,
+				49BFD4F61C4595B30056742A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 49BFD4DA1C4595B20056742A /* Project object */;
+}
