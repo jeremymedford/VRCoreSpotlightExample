@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		49BFD4E61C4595B30056742A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFD4E51C4595B30056742A /* AppDelegate.swift */; };
-		49BFD4E81C4595B30056742A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFD4E71C4595B30056742A /* ViewController.swift */; };
+		49BFD4E81C4595B30056742A /* VRParkDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFD4E71C4595B30056742A /* VRParkDetailsViewController.swift */; };
 		49BFD4EB1C4595B30056742A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD4E91C4595B30056742A /* Main.storyboard */; };
 		49BFD4ED1C4595B30056742A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD4EC1C4595B30056742A /* Assets.xcassets */; };
 		49BFD4F01C4595B30056742A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD4EE1C4595B30056742A /* LaunchScreen.storyboard */; };
+		49BFD4F81C4596A20056742A /* VRParksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFD4F71C4596A20056742A /* VRParksViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49BFD4E21C4595B30056742A /* VRCoreSpotlightExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VRCoreSpotlightExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BFD4E51C4595B30056742A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		49BFD4E71C4595B30056742A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		49BFD4E71C4595B30056742A /* VRParkDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VRParkDetailsViewController.swift; sourceTree = "<group>"; };
 		49BFD4EA1C4595B30056742A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		49BFD4EC1C4595B30056742A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49BFD4EF1C4595B30056742A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49BFD4F11C4595B30056742A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49BFD4F71C4596A20056742A /* VRParksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRParksViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +57,8 @@
 			isa = PBXGroup;
 			children = (
 				49BFD4E51C4595B30056742A /* AppDelegate.swift */,
-				49BFD4E71C4595B30056742A /* ViewController.swift */,
+				49BFD4F71C4596A20056742A /* VRParksViewController.swift */,
+				49BFD4E71C4595B30056742A /* VRParkDetailsViewController.swift */,
 				49BFD4E91C4595B30056742A /* Main.storyboard */,
 				49BFD4EC1C4595B30056742A /* Assets.xcassets */,
 				49BFD4EE1C4595B30056742A /* LaunchScreen.storyboard */,
@@ -135,7 +138,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49BFD4E81C4595B30056742A /* ViewController.swift in Sources */,
+				49BFD4E81C4595B30056742A /* VRParkDetailsViewController.swift in Sources */,
+				49BFD4F81C4596A20056742A /* VRParksViewController.swift in Sources */,
 				49BFD4E61C4595B30056742A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
