@@ -15,6 +15,7 @@ class VRParkDetailsViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var address1Label: UILabel!
     @IBOutlet weak var address2Label: UILabel!
+    @IBOutlet weak var thumbnailImageView: UIImageView!
     
     
     override func viewDidLoad() {
@@ -23,10 +24,13 @@ class VRParkDetailsViewController: UIViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
+        
         if park != nil {
             self.nameLabel.text = park?.name
             self.address1Label.text = park?.address1
             self.address2Label.text = park?.address2
+            self.thumbnailImageView.image = UIImage(named: (park?.thumb)!)
         }
     }
 

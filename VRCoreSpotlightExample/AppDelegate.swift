@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreSpotlight
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -16,6 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
         return true
     }
 
@@ -41,6 +43,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // MARK: HANDOFF
+    
+    func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
+        
+        let type = userActivity.activityType
+        
+        if type == CSSearchableItemActionType {
+            
+            let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String
+            
+            let navController = self.window!.rootViewController as! UINavigationController
+            if let parksVC = navController.topViewController as? VRParksViewController {
+                parksVC.showPark(uniqueIdentifier)
+            }
+        }
+        
+        return true
+    }
 
 }
 

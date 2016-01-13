@@ -13,6 +13,13 @@
 		49BFD4ED1C4595B30056742A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD4EC1C4595B30056742A /* Assets.xcassets */; };
 		49BFD4F01C4595B30056742A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD4EE1C4595B30056742A /* LaunchScreen.storyboard */; };
 		49BFD4F81C4596A20056742A /* VRParksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFD4F71C4596A20056742A /* VRParksViewController.swift */; };
+		49BFD5001C45D55C0056742A /* CoreSpotlight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BFD4FF1C45D55C0056742A /* CoreSpotlight.framework */; settings = {ATTRIBUTES = (Required, ); }; };
+		49BFD5021C45D6DC0056742A /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49BFD5011C45D6DC0056742A /* MobileCoreServices.framework */; };
+		49BFD5091C46CBD70056742A /* park5thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD5041C46CBD70056742A /* park5thumbnail.png */; };
+		49BFD50A1C46CBD70056742A /* park4thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD5051C46CBD70056742A /* park4thumbnail.png */; };
+		49BFD50B1C46CBD70056742A /* park3thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD5061C46CBD70056742A /* park3thumbnail.png */; };
+		49BFD50C1C46CBD70056742A /* park2thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD5071C46CBD70056742A /* park2thumbnail.png */; };
+		49BFD50D1C46CBD70056742A /* park1thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD5081C46CBD70056742A /* park1thumbnail.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +31,13 @@
 		49BFD4EF1C4595B30056742A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49BFD4F11C4595B30056742A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49BFD4F71C4596A20056742A /* VRParksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRParksViewController.swift; sourceTree = "<group>"; };
+		49BFD4FF1C45D55C0056742A /* CoreSpotlight.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreSpotlight.framework; path = System/Library/Frameworks/CoreSpotlight.framework; sourceTree = SDKROOT; };
+		49BFD5011C45D6DC0056742A /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		49BFD5041C46CBD70056742A /* park5thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park5thumbnail.png; path = ../../../../Dropbox/VINTAGEROBOT/blog/CoreSpotlight/park5thumbnail.png; sourceTree = "<group>"; };
+		49BFD5051C46CBD70056742A /* park4thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park4thumbnail.png; path = ../../../../Dropbox/VINTAGEROBOT/blog/CoreSpotlight/park4thumbnail.png; sourceTree = "<group>"; };
+		49BFD5061C46CBD70056742A /* park3thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park3thumbnail.png; path = ../../../../Dropbox/VINTAGEROBOT/blog/CoreSpotlight/park3thumbnail.png; sourceTree = "<group>"; };
+		49BFD5071C46CBD70056742A /* park2thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park2thumbnail.png; path = ../../../../Dropbox/VINTAGEROBOT/blog/CoreSpotlight/park2thumbnail.png; sourceTree = "<group>"; };
+		49BFD5081C46CBD70056742A /* park1thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park1thumbnail.png; path = ../../../../Dropbox/VINTAGEROBOT/blog/CoreSpotlight/park1thumbnail.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +45,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BFD5021C45D6DC0056742A /* MobileCoreServices.framework in Frameworks */,
+				49BFD5001C45D55C0056742A /* CoreSpotlight.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +56,7 @@
 		49BFD4D91C4595B20056742A = {
 			isa = PBXGroup;
 			children = (
+				49BFD4FE1C45D4220056742A /* Frameworks */,
 				49BFD4E41C4595B30056742A /* VRCoreSpotlightExample */,
 				49BFD4E31C4595B30056742A /* Products */,
 			);
@@ -63,8 +80,30 @@
 				49BFD4EC1C4595B30056742A /* Assets.xcassets */,
 				49BFD4EE1C4595B30056742A /* LaunchScreen.storyboard */,
 				49BFD4F11C4595B30056742A /* Info.plist */,
+				49BFD5031C46CBB10056742A /* Resources */,
 			);
 			path = VRCoreSpotlightExample;
+			sourceTree = "<group>";
+		};
+		49BFD4FE1C45D4220056742A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				49BFD5011C45D6DC0056742A /* MobileCoreServices.framework */,
+				49BFD4FF1C45D55C0056742A /* CoreSpotlight.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		49BFD5031C46CBB10056742A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49BFD5041C46CBD70056742A /* park5thumbnail.png */,
+				49BFD5051C46CBD70056742A /* park4thumbnail.png */,
+				49BFD5061C46CBD70056742A /* park3thumbnail.png */,
+				49BFD5071C46CBD70056742A /* park2thumbnail.png */,
+				49BFD5081C46CBD70056742A /* park1thumbnail.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +164,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49BFD50D1C46CBD70056742A /* park1thumbnail.png in Resources */,
+				49BFD50C1C46CBD70056742A /* park2thumbnail.png in Resources */,
+				49BFD5091C46CBD70056742A /* park5thumbnail.png in Resources */,
+				49BFD50A1C46CBD70056742A /* park4thumbnail.png in Resources */,
+				49BFD50B1C46CBD70056742A /* park3thumbnail.png in Resources */,
 				49BFD4F01C4595B30056742A /* LaunchScreen.storyboard in Resources */,
 				49BFD4ED1C4595B30056742A /* Assets.xcassets in Resources */,
 				49BFD4EB1C4595B30056742A /* Main.storyboard in Resources */,
