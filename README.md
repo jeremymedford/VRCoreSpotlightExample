@@ -1,0 +1,2 @@
+# VRCoreSpotlightExample
+CoreSpotlight Search Example
