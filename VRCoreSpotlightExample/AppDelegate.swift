@@ -47,17 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
         
-        let type = userActivity.activityType
-        
-        if type == CSSearchableItemActionType {
-            
-            let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String
-            
-            let navController = self.window!.rootViewController as! UINavigationController
-            if let parksVC = navController.topViewController as? VRParksViewController {
-                parksVC.showPark(uniqueIdentifier)
-            }
-        }
+        // 4. Capture activity type and pass unique id to VRParksViewController to load correct park
         
         return true
     }

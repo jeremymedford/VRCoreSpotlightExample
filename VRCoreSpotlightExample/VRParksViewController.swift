@@ -34,10 +34,6 @@ class VRParksViewController: UITableViewController {
         
         parks = [parkOne, parkTwo, parkThree, parkFour, parkFive]
     }
-    
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -67,22 +63,11 @@ class VRParksViewController: UITableViewController {
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         let park = parks[indexPath.row]
         
-        let parkName = park.name
-        let attributeSet = CSSearchableItemAttributeSet(itemContentType: "kUTTypeImage")
-        attributeSet.title = parkName
-        attributeSet.contentDescription = "Learn what \(parkName) has to offer!"
+        // 1. Create attribute set with desired metadata for the index item
         
-        let thumbnail = UIImage(named: park.thumb)
-        let thumbnailData = UIImagePNGRepresentation(thumbnail!)
-        attributeSet.thumbnailData = thumbnailData
+        // 2. Create item with unique id, a domain id, and the attribute set
         
-        let item = CSSearchableItem(uniqueIdentifier: parkName, domainIdentifier: "Parks", attributeSet: attributeSet)
-        
-        CSSearchableIndex.defaultSearchableIndex().indexSearchableItems([item]) { (error: NSError?) in
-            if let error = error {
-                print("Error indexing items: \(error.localizedDescription)")
-            }
-        }
+        // 3. Add item to default searchable index
         
         pushDetailsController(park)
     }
