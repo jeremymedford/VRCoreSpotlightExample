@@ -13,11 +13,11 @@
 		49BFD4ED1C4595B30056742A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD4EC1C4595B30056742A /* Assets.xcassets */; };
 		49BFD4F01C4595B30056742A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD4EE1C4595B30056742A /* LaunchScreen.storyboard */; };
 		49BFD4F81C4596A20056742A /* VRParksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49BFD4F71C4596A20056742A /* VRParksViewController.swift */; };
-		49BFD5091C46CBD70056742A /* park5thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD5041C46CBD70056742A /* park5thumbnail.png */; };
-		49BFD50A1C46CBD70056742A /* park4thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD5051C46CBD70056742A /* park4thumbnail.png */; };
-		49BFD50B1C46CBD70056742A /* park3thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD5061C46CBD70056742A /* park3thumbnail.png */; };
-		49BFD50C1C46CBD70056742A /* park2thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD5071C46CBD70056742A /* park2thumbnail.png */; };
-		49BFD50D1C46CBD70056742A /* park1thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD5081C46CBD70056742A /* park1thumbnail.png */; };
+		49BFD51D1C485D9C0056742A /* park1thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD5181C485D9C0056742A /* park1thumbnail.png */; };
+		49BFD51E1C485D9C0056742A /* park2thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD5191C485D9C0056742A /* park2thumbnail.png */; };
+		49BFD51F1C485D9C0056742A /* park3thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD51A1C485D9C0056742A /* park3thumbnail.png */; };
+		49BFD5201C485D9C0056742A /* park4thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD51B1C485D9C0056742A /* park4thumbnail.png */; };
+		49BFD5211C485D9C0056742A /* park5thumbnail.png in Resources */ = {isa = PBXBuildFile; fileRef = 49BFD51C1C485D9C0056742A /* park5thumbnail.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,11 +29,11 @@
 		49BFD4EF1C4595B30056742A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		49BFD4F11C4595B30056742A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49BFD4F71C4596A20056742A /* VRParksViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VRParksViewController.swift; sourceTree = "<group>"; };
-		49BFD5041C46CBD70056742A /* park5thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park5thumbnail.png; path = ../../../../Dropbox/VINTAGEROBOT/blog/CoreSpotlight/park5thumbnail.png; sourceTree = "<group>"; };
-		49BFD5051C46CBD70056742A /* park4thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park4thumbnail.png; path = ../../../../Dropbox/VINTAGEROBOT/blog/CoreSpotlight/park4thumbnail.png; sourceTree = "<group>"; };
-		49BFD5061C46CBD70056742A /* park3thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park3thumbnail.png; path = ../../../../Dropbox/VINTAGEROBOT/blog/CoreSpotlight/park3thumbnail.png; sourceTree = "<group>"; };
-		49BFD5071C46CBD70056742A /* park2thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park2thumbnail.png; path = ../../../../Dropbox/VINTAGEROBOT/blog/CoreSpotlight/park2thumbnail.png; sourceTree = "<group>"; };
-		49BFD5081C46CBD70056742A /* park1thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park1thumbnail.png; path = ../../../../Dropbox/VINTAGEROBOT/blog/CoreSpotlight/park1thumbnail.png; sourceTree = "<group>"; };
+		49BFD5181C485D9C0056742A /* park1thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park1thumbnail.png; path = Resources/park1thumbnail.png; sourceTree = SOURCE_ROOT; };
+		49BFD5191C485D9C0056742A /* park2thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park2thumbnail.png; path = Resources/park2thumbnail.png; sourceTree = SOURCE_ROOT; };
+		49BFD51A1C485D9C0056742A /* park3thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park3thumbnail.png; path = Resources/park3thumbnail.png; sourceTree = SOURCE_ROOT; };
+		49BFD51B1C485D9C0056742A /* park4thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park4thumbnail.png; path = Resources/park4thumbnail.png; sourceTree = SOURCE_ROOT; };
+		49BFD51C1C485D9C0056742A /* park5thumbnail.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = park5thumbnail.png; path = Resources/park5thumbnail.png; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,11 +89,11 @@
 		49BFD5031C46CBB10056742A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				49BFD5041C46CBD70056742A /* park5thumbnail.png */,
-				49BFD5051C46CBD70056742A /* park4thumbnail.png */,
-				49BFD5061C46CBD70056742A /* park3thumbnail.png */,
-				49BFD5071C46CBD70056742A /* park2thumbnail.png */,
-				49BFD5081C46CBD70056742A /* park1thumbnail.png */,
+				49BFD5181C485D9C0056742A /* park1thumbnail.png */,
+				49BFD5191C485D9C0056742A /* park2thumbnail.png */,
+				49BFD51A1C485D9C0056742A /* park3thumbnail.png */,
+				49BFD51B1C485D9C0056742A /* park4thumbnail.png */,
+				49BFD51C1C485D9C0056742A /* park5thumbnail.png */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -156,14 +156,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				49BFD50D1C46CBD70056742A /* park1thumbnail.png in Resources */,
-				49BFD50C1C46CBD70056742A /* park2thumbnail.png in Resources */,
-				49BFD5091C46CBD70056742A /* park5thumbnail.png in Resources */,
-				49BFD50A1C46CBD70056742A /* park4thumbnail.png in Resources */,
-				49BFD50B1C46CBD70056742A /* park3thumbnail.png in Resources */,
+				49BFD51D1C485D9C0056742A /* park1thumbnail.png in Resources */,
 				49BFD4F01C4595B30056742A /* LaunchScreen.storyboard in Resources */,
+				49BFD51F1C485D9C0056742A /* park3thumbnail.png in Resources */,
 				49BFD4ED1C4595B30056742A /* Assets.xcassets in Resources */,
+				49BFD5211C485D9C0056742A /* park5thumbnail.png in Resources */,
 				49BFD4EB1C4595B30056742A /* Main.storyboard in Resources */,
+				49BFD51E1C485D9C0056742A /* park2thumbnail.png in Resources */,
+				49BFD5201C485D9C0056742A /* park4thumbnail.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +324,7 @@
 				49BFD4F61C4595B30056742A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
