@@ -23,7 +23,6 @@ class VRParksViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("viewDidLoad")
         title = "San Francisco Parks"
         
         let parkOne = Park(name: "Alice Chalmers Playground", address1: "670 Brunswick", address2: "San Francisco, CA", thumb: "park1thumbnail")
@@ -87,7 +86,6 @@ class VRParksViewController: UITableViewController {
     }
     
     private func pushDetailsController(park: Park!) {
-        print("In pushDetailsController")
         let parkViewController = self.storyboard?.instantiateViewControllerWithIdentifier("ParkDetailsViewController") as! VRParkDetailsViewController
         parkViewController.park = park
         self.navigationController?.pushViewController(parkViewController, animated: true)
