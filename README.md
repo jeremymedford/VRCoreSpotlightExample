@@ -19,7 +19,7 @@ Open the Xcode project file, and run it in the simulator under the iPhone device
 
 Now, stop the app and let's add the Spotlight Search functionality.
 
-### Importing the Necessary Frameworks
+#### Importing the Necessary Frameworks
 
 1. Select the 'VRCoreSpotlightExample' project in then Project Navigator
 2. Select the 'VRCoreSpotlightExample' target underneath TARGETS
@@ -33,7 +33,7 @@ Both frameworks should now be visible in the list. Keep the Status as 'Required'
 ### Adding the searchable items to the index
 
 From the Project Navigator, open VRParksViewController.swift. For this example we want to add the park to be indexed at the point where we select it in the list. Locate the following section of code: 
-<Code snippet>
+
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
       let park = parks[indexPath.row]
 
@@ -49,24 +49,27 @@ From the Project Navigator, open VRParksViewController.swift. For this example w
 Add the following code snippets underneath the corresponding number in comments.
 
 1. Create the CSSearchableItemAttributeSet, passing in the content type of "kUTTypeImage" since we will be using image data for the item.
-    let parkName = park.name
-    let attributeSet = CSSearchableItemAttributeSet(itemContentType: "kUTTypeImage")
-    attributeSet.title = parkName
-    attributeSet.contentDescription = "Learn what \(parkName) has to offer!"
+ 
+     let parkName = park.name
+     let attributeSet = CSSearchableItemAttributeSet(itemContentType: "kUTTypeImage")
+     attributeSet.title = parkName
+     attributeSet.contentDescription = "Learn what \(parkName) has to offer!"
     
-    let thumbnail = UIImage(named: park.thumb)
-    let thumbnailData = UIImagePNGRepresentation(thumbnail!)
-    attributeSet.thumbnailData = thumbnailData
+     let thumbnail = UIImage(named: park.thumb)
+     let thumbnailData = UIImagePNGRepresentation(thumbnail!)
+     attributeSet.thumbnailData = thumbnailData
   
 2. Create a CSSearchableItem to represent the park we wish to index.
+
     let item = CSSearchableItem(uniqueIdentifier: parkName, domainIdentifier: "Parks", attributeSet: attributeSet)
     
 3. Add the items to the default searchable index.
-    CSSearchableIndex.defaultSearchableIndex().indexSearchableItems([item]) { (error: NSError?) in
-                if let error = error {
-                    print("Error indexing items: \(error.localizedDescription)")
-                }
-            }
+
+     CSSearchableIndex.defaultSearchableIndex().indexSearchableItems([item]) { (error: NSError?) in
+                 if let error = error {
+                     print("Error indexing items: \(error.localizedDescription)")
+                 }
+             }
 
 To summarize what we just did...
 The CSSearchableItem is an object that represents an item that can be indexed and returned in Spotlight when users search on their devices. First we created an attribute set that contains properties that specify the metadata you want to display about an item in a search result. Note that the image must be NSData format to be included in the attribute set. The domainIdentifier can be useful if your app contains categories of searchable items that you'd like to group accordingly.
