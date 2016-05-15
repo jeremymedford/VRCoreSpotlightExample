@@ -50,26 +50,26 @@ Add the following code snippets underneath the corresponding number in comments.
 
 1. Create the CSSearchableItemAttributeSet, passing in the content type of "kUTTypeImage" since we will be using image data for the item.
  
-     let parkName = park.name
-     let attributeSet = CSSearchableItemAttributeSet(itemContentType: "kUTTypeImage")
-     attributeSet.title = parkName
-     attributeSet.contentDescription = "Learn what \(parkName) has to offer!"
+		let parkName = park.name
+		let attributeSet = CSSearchableItemAttributeSet(itemContentType: "kUTTypeImage")
+		attributeSet.title = parkName
+		attributeSet.contentDescription = "Learn what \(parkName) has to offer!"
     
-     let thumbnail = UIImage(named: park.thumb)
-     let thumbnailData = UIImagePNGRepresentation(thumbnail!)
-     attributeSet.thumbnailData = thumbnailData
+		let thumbnail = UIImage(named: park.thumb)
+		let thumbnailData = UIImagePNGRepresentation(thumbnail!)
+		attributeSet.thumbnailData = thumbnailData
   
 2. Create a CSSearchableItem to represent the park we wish to index.
 
-    let item = CSSearchableItem(uniqueIdentifier: parkName, domainIdentifier: "Parks", attributeSet: attributeSet)
+		let item = CSSearchableItem(uniqueIdentifier: parkName, domainIdentifier: "Parks", attributeSet: attributeSet)
     
 3. Add the items to the default searchable index.
 
-     CSSearchableIndex.defaultSearchableIndex().indexSearchableItems([item]) { (error: NSError?) in
-                 if let error = error {
-                     print("Error indexing items: \(error.localizedDescription)")
-                 }
-             }
+		CSSearchableIndex.defaultSearchableIndex().indexSearchableItems([item]) { (error: NSError?) in
+			if let error = error {
+				print("Error indexing items: \(error.localizedDescription)")
+			}
+		}
 
 To summarize what we just did...
 The CSSearchableItem is an object that represents an item that can be indexed and returned in Spotlight when users search on their devices. First we created an attribute set that contains properties that specify the metadata you want to display about an item in a search result. Note that the image must be NSData format to be included in the attribute set. The domainIdentifier can be useful if your app contains categories of searchable items that you'd like to group accordingly.
