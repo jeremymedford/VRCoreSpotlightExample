@@ -1,7 +1,6 @@
 # VRCoreSpotlightExample
-CoreSpotlight Search Example
 
- # Integrating your app into Spotlight Search for iOS
+# Integrating your app into Spotlight Search for iOS
 
 ## Background
 
@@ -83,25 +82,27 @@ Go ahead and run the app. Tap on a couple of parks to ensure they are added to t
 The restoring process 
 
 In the AppDelegate.swift we make use of the existing UIApplicationDelegate method:
-    func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
+
+		func application(application: UIApplication, continueUserActivity userActivity: NSUserActivity, restorationHandler: ([AnyObject]?) -> Void) -> Bool {
     
-        // 4. Capture activity type and pass unique id to VRParksViewController to load correct park
+			// 4. Capture activity type and pass unique id to VRParksViewController to load correct park
     
-        return true
-    }
+			return true
+		}
 
     4. Add the necessary code to inspect the activity type and have the app perform the necessary action
-    let type = userActivity.activityType
     
-    if type == CSSearchableItemActionType {
+		let type = userActivity.activityType
     
-        let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String
+		if type == CSSearchableItemActionType {
     
-        let navController = self.window!.rootViewController as! UINavigationController
-        if let parksVC = navController.topViewController as? VRParksViewController {
-            parksVC.showPark(uniqueIdentifier)
-        }
-    }
+			let uniqueIdentifier = userActivity.userInfo?[CSSearchableItemActivityIdentifier] as? String
+    
+			let navController = self.window!.rootViewController as! UINavigationController
+			if let parksVC = navController.topViewController as? VRParksViewController {
+				parksVC.showPark(uniqueIdentifier)
+			}
+		}
 
 The important parts of this code are the userActivity.activityType being CSSearchItemActionType, and accessing the 'uniqueIdentifier' with the userActivity.userInfo dictionary. From their we just need to tell our VRParksViewController that we'd like to show the Park that corresponds to the uniqueIdentifier we specified at the time of creating the CSSearchableItems. Great, now run the app, perform a Spotlight search, and tap the corresponding park. The app should open up to that specific park detail view.
 
@@ -112,10 +113,10 @@ A couple of additional topics I did not cover in this article relate to updating
 For updating, the steps are exactly the same as adding a new item. Since the item is identified by the uniqueIdentifier, the associated item is updating for you automatically when adding it via CSSearchableIndex.defaultSearchableIndex().indexSearchableItems.
 
 For removing an item, call
-    deleteSearchableItemsWithIdentifiers(_ identifiers: [String], completionHandler completionHandler: ((NSError?) -> Void)?) 
+		deleteSearchableItemsWithIdentifiers(_ identifiers: [String], completionHandler completionHandler: ((NSError?) -> Void)?) 
   
 and pass in either an array of identifiers ["Mission Dolores Park", "Hayes Valley Playground"] or by domainIdentifier,
-    deleteSearchableItemsWithDomainIdentifiers(_ domainIdentifiers: [String], completionHandler completionHandler: ((NSError?) -> Void)?) 
+		deleteSearchableItemsWithDomainIdentifiers(_ domainIdentifiers: [String], completionHandler completionHandler: ((NSError?) -> Void)?) 
 and pass in an array of domain identifiers, ["Parks"]. Awesome. For more information check out these resources:
 
 [Introducing Search APIs][https://developer.apple.com/videos/play/wwdc2015/709/]
