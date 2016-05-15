@@ -110,7 +110,7 @@ More Information
 
 A couple of additional topics I did not cover in this article relate to updating and removing index items.
 
-For updating, the steps are exactly the same as adding a new item. Since the item is identified by the uniqueIdentifier, the associated item is updating for you automatically when adding it via CSSearchableIndex.defaultSearchableIndex().indexSearchableItems.
+For updating, the steps are exactly the same as adding a new item. Since the item is identified by the uniqueIdentifier, the associated item is updating for you automatically when adding it via ```CSSearchableIndex.defaultSearchableIndex().indexSearchableItems.```
 
 For removing an item, call
 
