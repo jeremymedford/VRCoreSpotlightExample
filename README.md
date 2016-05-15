@@ -113,10 +113,13 @@ A couple of additional topics I did not cover in this article relate to updating
 For updating, the steps are exactly the same as adding a new item. Since the item is identified by the uniqueIdentifier, the associated item is updating for you automatically when adding it via CSSearchableIndex.defaultSearchableIndex().indexSearchableItems.
 
 For removing an item, call
+
 		deleteSearchableItemsWithIdentifiers(_ identifiers: [String], completionHandler completionHandler: ((NSError?) -> Void)?) 
-  
+		
 and pass in either an array of identifiers ["Mission Dolores Park", "Hayes Valley Playground"] or by domainIdentifier,
+
 		deleteSearchableItemsWithDomainIdentifiers(_ domainIdentifiers: [String], completionHandler completionHandler: ((NSError?) -> Void)?) 
+		
 and pass in an array of domain identifiers, ["Parks"]. Awesome. For more information check out these resources:
 
 [Introducing Search APIs](https://developer.apple.com/videos/play/wwdc2015/709/)
