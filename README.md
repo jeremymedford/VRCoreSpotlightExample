@@ -114,11 +114,15 @@ For updating, the steps are exactly the same as adding a new item. Since the ite
 
 For removing an item, call
 
-		deleteSearchableItemsWithIdentifiers(_ identifiers: [String], completionHandler completionHandler: ((NSError?) -> Void)?) 
+		deleteSearchableItemsWithIdentifiers(
+		_ identifiers: [String], 
+		completionHandler completionHandler: ((NSError?) -> Void)?) 
 		
 and pass in either an array of identifiers ["Mission Dolores Park", "Hayes Valley Playground"] or by domainIdentifier,
 
-		deleteSearchableItemsWithDomainIdentifiers(_ domainIdentifiers: [String], completionHandler completionHandler: ((NSError?) -> Void)?) 
+		deleteSearchableItemsWithDomainIdentifiers(
+		_ domainIdentifiers: [String], 
+		completionHandler completionHandler: ((NSError?) -> Void)?) 
 		
 and pass in an array of domain identifiers, ["Parks"]. Awesome. For more information check out these resources:
 
