@@ -120,4 +120,5 @@ and pass in either an array of identifiers ["Mission Dolores Park", "Hayes Valle
 and pass in an array of domain identifiers, ["Parks"]. Awesome. For more information check out these resources:
 
 [Introducing Search APIs](https://developer.apple.com/videos/play/wwdc2015/709/)
+
 [CoreSpotlight Framework Reference](https://developer.apple.com/library/ios/documentation/CoreSpotlight/Reference/CoreSpotlight_Framework/)
